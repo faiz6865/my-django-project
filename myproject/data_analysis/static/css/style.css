@@ -1,0 +1,40 @@
+body{
+    background-color: #f9f1f1;
+    text-align: center;
+}
+#file-upload::-webkit-file-upload-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#file-upload::-webkit-file-upload-button:hover {
+    background: #0056b3;
+}
+h1{
+    padding-bottom: 20px;
+    text-decoration: underline #0056b3;
+    font-size: 42px;
+    font-weight: 300;
+}
+h4{
+    font-size: 24px;
+    font-weight: 200;
+}
+label{
+    font-size: 20px;
+}
+button{
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background: #0056b3;
+}

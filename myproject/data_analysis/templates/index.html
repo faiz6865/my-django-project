@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis Upload</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Faiz Shaikh Intership Technical Project</h1>
+    <h4>To upload the file Click Choose File -> See Results</h4>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="custom-file-upload">
+            <label for="file-upload">Select Your File &darr;</label><br><br>
+            <input id="file-upload" type="file" name="file" />
+        </div><br>
+        <button type="submit">See Results</button>
+    </form>
+</body>
+</html>

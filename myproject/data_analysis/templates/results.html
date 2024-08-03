@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis Results</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <h2>First Few Rows</h2>
+    <center><div>{{ first_rows|safe }}</div></center>
+    <h2>Missing Values</h2>
+    <center><div>{{ missing_values|safe }}</div></center>
+    <h2>Histogram</h2>
+    <center><img src="{{ histogram }}" alt="Histogram"></center>
+    <br>
+    <a href="{% url 'index' %}">Upload another file</a>
+</body>
+</html>
